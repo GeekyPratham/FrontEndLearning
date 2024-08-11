@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+            background-color: yellow;
+            border: 5px solid black;
+            margin: 10px;
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            height: 1000px; 
+            /*<!-- flex-wrap: wrap; -->*/
+            justify-content: start;
+            align-items: start;
+            align-content: center;
+            
+
+            
+        }
+        .box{
+             
+            border: 5px dotted black;
+            margin: 10px;
+            padding: 5px;
+        }
+        #box1{
+            background-color: aqua;
+            /*order: 0;*/
+            /*flex-shrink: 4;*/
+            /*flex-grow: 5;*/
+            /**/
+            /*flex-basis: 400px;*/
+            align-self: center;
+        }
+        #box2{
+            background-color: red;
+            /*order: -1;*/
+            /*flex-grow: 1;*/
+            align-self: start;
+        }
+        #box3{
+            background-color: green;
+            /*flex-grow: 1;*/
+            /*flex-basis: 500px;*/
+            align-self: end;
+        }
+        #box4{
+            background-color: orange;
+            /* flex-grow: 1;*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><p> Box1 </p></div>
+        <div class="box" id="box2"><p> Box2 </p></div>
+        <div class="box" id="box3"><p> Box3 </p></div>
+        <div class="box" id="box4"><p> Box4 </p></div>
+    </div>
+</body>
+</html>

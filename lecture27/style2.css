@@ -1,0 +1,136 @@
+*{
+    /* universal selector */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(123,104,238) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 400px;
+    height: 700px;
+    
+    background-color: white;
+   
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+.box .imageBox{
+    width: 100%;
+    height: 30%;
+}
+.box .imageBox img{ /* card ka ander jao then image ka ander jao */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: inherit; /* Inherits border-radius from .box */
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.box .description{
+    
+    height: 25%;
+    width: 80%;
+}
+.amountBox{
+    background-color: skyblue;
+    height: 10%;
+    width: 80%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.amountBox .leftBox{
+    padding: 2px;
+    height: 80%;
+ 
+    width: 70%;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.amountBox .leftBox .logo{
+    
+    height: 100%;
+    width: 35%;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.amountBox .leftBox p{
+    height: 100%;
+    width: 30%;
+}
+
+.amountBox .rightBox{
+    margin: 3px;
+    padding: 5px;
+
+}
+.rightBox a{
+    font-weight: bold;
+}
+
+.box #paymentButton{
+    background-color: darkblue;
+    height: 9%;
+    width: 80%;
+    box-shadow: 30px;
+    color: white;
+    border-radius: 10px;
+    /* material design shadow css */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.box .cancleBox{
+   
+    height: 5%;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cancleBox a{
+    text-decoration: none;
+    color: rgb(77, 75, 75);
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width:500px){
+    .amountBox{
+        flex-direction: column;
+    }
+}

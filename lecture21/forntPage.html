@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:   yellow;
+            border: 5px solid brown;
+            height: 700px;
+            margin: 20px;
+            padding: 20px;
+            overflow: auto;
+            position: relative;
+            display: flex;
+            <!-- justify-content: space-between; -->
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            display: flex;
+            
+            
+
+        }
+        #box1{
+            background-color:   orange;
+            border: 5px dotted brown;
+            flex-direction: column;
+            
+        }
+        #box2{
+            background-color: greenyellow;
+            border: 5px dotted brown;
+            
+        }
+        .dibba{
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            
+        }
+        #dibba1{
+            background-color: gray;
+            border: 3px solid black;
+        }
+        #dibba2{
+            background-color: gray;
+            border: 3px solid black;
+        }
+        #dibba3{
+            background-color: gray;
+            border: 3px solid black;
+        }
+
+        @media (max-width:500px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+         <div class="box" id="box1">
+            <div class="dibba" id="dibba1">
+                <h3>Pratham Raj</h3>
+            </div>
+            <div class="dibba" id="dibba2">
+                <h3>2251026</h3>
+            </div>
+            <div class="dibba" id="dibba3">
+                <h3>computer</h3>
+            </div>
+         </div>
+         <div class="box" id="box2">
+            <img src="mypic.jpg" alt="photo" height="150px" width="150px">
+         </div>
+    </div>
+</body>
+</html>
